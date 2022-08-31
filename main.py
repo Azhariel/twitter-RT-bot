@@ -20,7 +20,7 @@ auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
 
 # Cada usuário possui um ID único no twitter, que não é aparente mas pode ser consultado via chamada na API.
-# Para achar a ID do usuário, é realizada a chamada api.get_user('usuario').id
+# Para achar a ID do usuário, é realizada a chamada api.get_user(screen_name=user).id, onde user é o @user.
 # No caso de múltiplos usuários, pode-se utilizar uma lista. Neste exemplo, há apenas meu usuário (@azhariel)
 members_id=[13830742]
 
